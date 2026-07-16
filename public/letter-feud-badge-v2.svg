@@ -1,0 +1,45 @@
+<svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:wght@800;900&amp;display=swap');
+      .title {
+        font-family: 'Reddit Sans', 'Arial Rounded MT Bold', sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        letter-spacing: 0px;
+      }
+    </style>
+    <radialGradient id="badgeFill" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#ff6a1f" />
+      <stop offset="100%" stop-color="#c73f00" />
+    </radialGradient>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="17" cy="17" r="2.5" fill="#ffffff" opacity="0.18" />
+    </pattern>
+    <clipPath id="ovalClip">
+      <ellipse cx="350" cy="140" rx="330" ry="130" />
+    </clipPath>
+  </defs>
+
+  <!-- drop shadow oval -->
+  <ellipse cx="358" cy="152" rx="332" ry="132" fill="#5a1a00" opacity="0.35" />
+
+  <!-- outer ring -->
+  <ellipse cx="350" cy="140" rx="335" ry="133" fill="#fff2d6" />
+  <ellipse cx="350" cy="140" rx="322" ry="122" fill="#c73f00" />
+
+  <!-- main badge -->
+  <ellipse cx="350" cy="140" rx="308" ry="110" fill="url(#badgeFill)" />
+  <g clip-path="url(#ovalClip)">
+    <rect x="0" y="0" width="700" height="280" fill="url(#dots)" />
+  </g>
+  <ellipse cx="350" cy="140" rx="308" ry="110" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.6" />
+
+  <!-- LETTER -->
+  <text x="356" y="116" class="title" font-size="80" fill="#5a1a00" text-anchor="middle" opacity="0.4">letter</text>
+  <text x="350" y="110" class="title" font-size="80" fill="#ffffff" text-anchor="middle">letter</text>
+
+  <!-- FEUD -->
+  <text x="356" y="206" class="title" font-size="86" fill="#5a1a00" text-anchor="middle" opacity="0.4">feud</text>
+  <text x="350" y="200" class="title" font-size="86" fill="#ffffff" text-anchor="middle">feud</text>
+</svg>
